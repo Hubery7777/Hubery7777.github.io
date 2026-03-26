@@ -1,6 +1,7 @@
 :root {
   --tech-accent: #0ea5e9;
   --tech-muted: #64748b;
+  --tech-surface: rgba(15, 23, 42, 0.74);
 }
 
 /* Keep a clean technical look with subtle accents. */
@@ -14,9 +15,17 @@
   letter-spacing: 0.3px;
 }
 
+#nav .site-name {
+  font-weight: 700;
+}
+
 .post-content code,
 .post-content pre {
   font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+}
+
+.post-content pre {
+  border-radius: 10px;
 }
 
 .post-content blockquote {
@@ -26,6 +35,7 @@
 
 #aside-content .card-widget {
   border: 1px solid rgba(100, 116, 139, 0.18);
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
 }
 
 .article-sort-item-title,
@@ -33,8 +43,23 @@
   font-weight: 600;
 }
 
+#recent-posts > .recent-post-item {
+  border: 1px solid rgba(100, 116, 139, 0.14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#recent-posts > .recent-post-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.08);
+}
+
 .post-meta,
 .article-meta-wrap,
 .article-meta span {
   color: var(--tech-muted);
+}
+
+#footer {
+  background: var(--tech-surface);
+  backdrop-filter: blur(6px);
 }
