@@ -1,0 +1,40 @@
+:root {
+  --tech-accent: #0ea5e9;
+  --tech-muted: #64748b;
+}
+
+/* Keep a clean technical look with subtle accents. */
+#page-header.nav-fixed #nav {
+  background: rgba(15, 23, 42, 0.92) !important;
+}
+
+#nav .site-name,
+#nav .menus_item > a,
+#nav #toggle-menu > a {
+  letter-spacing: 0.3px;
+}
+
+.post-content code,
+.post-content pre {
+  font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+}
+
+.post-content blockquote {
+  border-left: 4px solid var(--tech-accent);
+  background: rgba(14, 165, 233, 0.06);
+}
+
+#aside-content .card-widget {
+  border: 1px solid rgba(100, 116, 139, 0.18);
+}
+
+.article-sort-item-title,
+.recent-post-item .article-title {
+  font-weight: 600;
+}
+
+.post-meta,
+.article-meta-wrap,
+.article-meta span {
+  color: var(--tech-muted);
+}
